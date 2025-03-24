@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Zahid Portfolio</title>
+    <link rel="stylesheet" href="ahmedzahidkhan.html.css">
+</head>
+<body>
+
+    <div class="card">
+         
+        <div class="text-section">       
+
+            <div class="badge">Hello I'm</div>
+            <h1>Ahmed Zahid Khan</h1>
+            <h3>Product Designer</h3>
+            <div class="contact">
+                <p>✉ sherrykhanofficial916@gmail.com</p>
+                <p>✆ +92 349 1203969</p>
+                <p>⚲  Karachi, North Karachi, Sector 11B , Pakistan</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="img/Ahmu.jpg" alt="Profile">
+        </div>
+    </div>
+   
+
+<script>
+document.addEventListener("mousemove", (e) => {
+    const particle = document.createElement("div");
+    particle.classList.add("particle");    
+    
+    particle.style.left = `${e.clientX}px`;
+    particle.style.top = `${e.clientY}px`;
+    
+    document.body.appendChild(particle);
+
+    
+    setTimeout(() => {
+        particle.remove();
+    }, 1000);
+});
+</script>
+
+</body>
+</html>
